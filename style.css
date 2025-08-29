@@ -344,6 +344,13 @@ html, body {
   padding-top: 5rem;
 }
 
+@media (max-width: 768px) {
+  .htext-container {
+    padding-top: 4.5rem;
+  }
+}
+
+
 .feint-subh {
   font-size: clamp(.8rem, 1.3vw + 0.37rem, 1rem);
 }
@@ -378,9 +385,9 @@ html, body {
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 459px) {
   .feint-header {
-    font-size: 7rem;
+    font-size: 6rem;
   }
 }
 
@@ -443,6 +450,8 @@ html, body {
  }
 
 }
+
+
 
 .prog-gap {
   gap: 3.5rem;
