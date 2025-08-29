@@ -18,8 +18,8 @@ desktopSwitch.addEventListener("change", () => setTheme(desktopSwitch.checked));
 mobileSwitch.addEventListener("change", () => setTheme(mobileSwitch.checked));
 
 
-
-window.addEventListener('scroll', function () {
+/*
+//window.addEventListener('scroll', function () {
   let navbar = this.document.getElementById('mainNav');
     if (this.window.scrollY > 50) {
       navbar.classList.add('shrink');
@@ -27,6 +27,7 @@ window.addEventListener('scroll', function () {
       navbar.classList.remove('shrink'); 
     }
 });
+*/
 
 
 document.addEventListener("DOMContentLoaded", () => {
