@@ -344,7 +344,7 @@ html, body {
 
 
 .feint-subh {
-  font-size: clamp(.2rem, 1.3vw + 0.37rem, 1rem);
+  font-size: clamp(.6rem, 1.3vw + 0.37rem, 1rem);
 }
 
 
