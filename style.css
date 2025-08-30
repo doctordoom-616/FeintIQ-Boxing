@@ -1,36 +1,30 @@
 :root {
-  --custom-body-bg: linear-gradient(to bottom, #0d0d0d, #000000 50%, #0d0d0d 100%);
-  --custom-nav-bg: rgba(0, 0, 0, 0.65);
+  --custom-body-bg: black;
+  --custom-nav-bg:  rgba(0, 0, 0, 0.85);
   --custom-text-color: #fff;
   --custom-nav-underline: white;
   --mobile-menu: white;
-  --burger: white;
-  --burger-items: white; 
-  --btn-inquire: white; 
-  --text-inquire:black;
-  --socials-container: white;
-  --custom-card: black;
-  --contact-border: white;
-  --contact-message: white;
-  --submit-message: white;
+
+  --whiteindtheme: white;
+
+  --btn-inquire: white;
+  --text-inquire: black;
+  --testimony: black;
   --submit-btn: rgb(70, 70, 70);
 }
 
 [data-bs-theme="light"] {
-  --custom-body-bg: linear-gradient(to bottom,#f5f5f5,#ffffff 50%,#f5f5f5 100%);
-  --custom-nav-bg: rgba(255, 255, 255, 0.85);
-  --custom-text-color: #060606;
+  --custom-body-bg:linear-gradient(to bottom,#f5f5f5,#ffffff 50%,#f5f5f5 100%);
+  --custom-nav-bg:rgba(255, 255, 255, 0.85);
+  --custom-text-color: black;
   --custom-nav-underline: black;
-  --burger: black;
-  --burger-items: black; 
+
+
+  --whiteindtheme: black;
+
   --btn-inquire: black;
-  --text-inquire:white;  
-  --socials-container: black;
-  --mobile-menu: black;
-  --custom-card: white;
-  --contact-border: black;
-  --contact-message: black;
-  --submit-message: white;
+  --text-inquire: white;
+  --testimony: transparent; 
   --submit-btn: black;
 }
 
@@ -70,19 +64,13 @@ html, body {
   background: var(--custom-body-bg);
 }
 
-.custom-prog {
+.custom-prog, .custom-about{
   background: linear-gradient(to bottom,#f5f5f5,#ffffff 50%,#f5f5f5 100%);
-}
-
-.custom-about {
-    background: linear-gradient(to bottom,#f5f5f5,#ffffff 50%,#f5f5f5 100%);
 }
 
 .custom-nav {
   background: var(--custom-nav-bg);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-  border-bottom: var(--custom-nav-border);
+
 }
 
 .custom-footer {
@@ -241,14 +229,14 @@ html, body {
 }
 
 .burger-icon {
-  color: var(--burger);
+  color: var(--whiteindtheme);
 }
 
 
 
 @media (max-width: 991px) {
 
-/* Hide collapse content with max-height instead of display:none */
+
 .navbar-collapse {
   max-height: 0;
   overflow: hidden;
@@ -257,24 +245,24 @@ html, body {
 
 /* When it's open */
 .navbar-collapse.show {
-  max-height: 500px; /* set larger than your menu’s total height */
+  max-height: 500px; 
 }
 
   .nav-link {
     font-size: 2rem;
-    color:var(--burger-items);
+    color:var(--whiteindtheme);
   }
 
   .nav-link:hover {
-    color: var(--burger-items);
+    color: var(--whiteindtheme);
   }
 
   .navbar .nav-link:active{
-    color: var(--burger-items);
+    color: var(--whiteindtheme);
   }
 
   .nav-link.dropdown-toggle:focus {
-    color: var(--burger-items);
+    color: var(--whiteindtheme);
   }
 
   .dropdown-item {
@@ -292,16 +280,16 @@ html, body {
     color: var(--mobile-menu);
     border: none;
     background-color: transparent;
-    display: block; /* prevent jump */
+    display: block; 
     max-height: 0;
     overflow: hidden;
     opacity: 0;
     transition: all .2s ease-in-out;
   }
 
-  /* When dropdown is shown */
+
   .dropdown-menu.show {
-    max-height: 500px; /* large enough for menu */
+    max-height: 500px; 
     opacity: 1;
   }
 
@@ -544,7 +532,7 @@ html, body {
 @media (min-width: 768px) {
   .trainer-card:hover {
     filter: none;
-    transform: scale(1.1) translateY(-10px); /* scale up and move up */
+    transform: scale(1.1) translateY(-10px);
   }
 }
 
@@ -600,7 +588,7 @@ html, body {
 
 @media (max-width: 576px) {
   .text-about-sub {
-    font-size: .8rem;
+    font-size: 1rem;
   }
 }
 
@@ -617,7 +605,7 @@ html, body {
 }
 
 .socials-container {
-  border: 1px solid var(--socials-container);
+  border: 1px solid var(--whiteindtheme);
   width: 48%;
 
 }
@@ -630,6 +618,7 @@ html, body {
 
 
 .testimony-card {
+  background-color: var(--testimony);
   border: .5px solid black;
   border-radius: 10px;
   width: 24rem;
