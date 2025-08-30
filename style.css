@@ -377,7 +377,7 @@ html, body {
   }
 }
 
-@media (max-width: 459px) {
+@media (max-width: 300px) {
   .feint-header {
     font-size: 6rem;
   }
