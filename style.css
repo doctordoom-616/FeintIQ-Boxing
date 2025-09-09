@@ -145,6 +145,7 @@ html, body {
 }
 
 .feint  {
+  line-height: .5;
   font-family: 'Shuttleblock Test Condensed Bold';
   letter-spacing:1.2px;
   font-size: 2.8rem;
@@ -236,7 +237,6 @@ html, body {
 
 @media (max-width: 991px) {
 
-
 .navbar-collapse {
   max-height: 0;
   overflow: hidden;
@@ -316,8 +316,12 @@ html, body {
   padding-top: 80px;
 }
 
+.hero-container {
+  padding: 0rem;
+}
+
 .hero-container { 
-  padding-left: 5rem;
+  padding-left: 0rem;
 }
 
 .htext-container {
@@ -338,12 +342,11 @@ html, body {
 
 .feint-header {
   font-family: 'Shuttleblock Test Condensed Bold';
-  padding-bottom: 3rem;
 }
 
 @media (min-width: 1200px) { 
   .feint-header {
-    font-size: 18rem;
+    font-size: 20rem;
   }
 }
 
@@ -361,7 +364,7 @@ html, body {
 
 @media (max-width: 576px) {
   .feint-header {
-    font-size: 9rem;
+    font-size: 7rem;
   }
 }
 
@@ -389,7 +392,7 @@ html, body {
   }
 
   .hero-img {
-    padding-top: 3rem;
+    padding-top: 5rem;
   }
 }
 
@@ -400,6 +403,8 @@ html, body {
 
   }
 }
+
+
 
 .feint-size {
   font-family: "Shuttleblock Test Condensed Bold";
@@ -435,6 +440,23 @@ html, body {
     font-size: .8rem;
     padding: 1rem;
   }
+}
+
+@media (max-width: 2200px) {
+  .hero-caption {
+    padding-top: 3rem;
+    padding-left: 26rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero-caption {
+    padding-left: 1rem;
+  }
+  }
+
+.hero-train {
+  text-decoration: none;
 }
 
 
@@ -539,7 +561,13 @@ html, body {
 
 @media (min-width: 768px) {
   .progandtrainer-gap {
-    gap: 3rem;
+    gap: 11rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  .progandtrainer-gap {
+    gap: 4rem;
   }
 }
 
