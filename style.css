@@ -368,6 +368,13 @@ html, body {
   }
 }
 
+@media (max-width: 420px) {
+  .feint-header {
+    font-size: 8.5rem;
+  }
+}
+
+
 @media (max-width: 300px) {
   .feint-header {
     font-size: 6rem;
@@ -567,6 +574,7 @@ html, body {
 
 @media (max-width: 1400px) {
   .progandtrainer-gap {
+    filter: grayscale();
     gap: 4rem;
   }
 }
@@ -574,6 +582,7 @@ html, body {
 
 @media (max-width: 767px) {
   .progandtrainer-gap {
+    filter: grayscale();
     gap: 2rem;
   }
 }
