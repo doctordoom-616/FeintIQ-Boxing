@@ -350,7 +350,22 @@ html, body {
   }
 }
 
+@media (max-width: 1640px) {
+  .htext-container {
+    padding-left: 3.5rem;
+
+  }
+  .feint-header {
+    font-size: 18rem;
+  }
+}
+
+
 @media (max-width: 1500px) {
+  .htext-container {
+    padding-left: 0rem;
+  }
+  
   .feint-header {
     font-size: 15rem;
   }
@@ -434,6 +449,8 @@ html, body {
   transition:  0.3s ease;
   text-decoration: none;
 }
+
+
 
 @media (min-width:992px) {
 
